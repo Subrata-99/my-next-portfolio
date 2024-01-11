@@ -15,6 +15,8 @@ import nextjsIcon from "../public/assets/nextjs.png";
 import AltaBooking from "../public/assets/AltaBooking.png";
 import SkFinance from "../public/assets/SkFinance.png";
 import UpCapita from "../public/assets/UpCapita.png";
+import WhiteOak from "../public/assets/WhiteOak.png";
+import itcAMS from "../public/assets/ITC-AMS.png";
 import IndusIndBank from "../public/assets/IndusIndBank.png";
 import CryptoTracker from "../public/assets/Crypto-Tracker.png";
 import ChatApp from "../public/assets/Chat-App.png";
@@ -71,7 +73,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-red-600 to-red-800 text-white px-4 py-2 rounded ml-8"
-                  href="https://drive.google.com/file/d/1Rl9gg0-DyuEIK5ObrpqkFpmNbWGUkeIW/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rtSNnqJmuM9ubikBwSHrwp2_iJ1IBiyU/view?usp=sharing"
                   download="Resume"
                   target="_blank"
                 >
@@ -133,8 +135,8 @@ export default function Home() {
             <Image
               src={subrataImage}
               alt="subrata_icon"
-              // layout="fill"
-              // objectFit="cover"
+            // layout="fill"
+            // objectFit="cover"
             />
           </div>
         </section>
@@ -251,6 +253,63 @@ export default function Home() {
             </h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+
+            <motion.div
+              variants={fadeIn("right", "0.3")}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: "0.3" }}
+              className="group relative overflow-hidden basis-1/3 flex-1  rounded-xl shadow-lg  dark:shadow-md dark:shadow-red-400"
+            >
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <Image
+                src={WhiteOak}
+                alt="WhiteOak"
+                className="group-hover:scale-125 transition-all duration-500 rounded-xl   "
+              />
+              <a href="https://mf.whiteoakamc.com/" target="_blank">
+                <div className="cursor-pointer text-xl text-white absolute -bottom-full left-1/2 z-40 group-hover:bottom-1/2 transition-all duration-500 text-center">
+                  Live
+                </div>
+              </a>
+              {/* <a href='https://drive.google.com/file/d/1PeItrCScqH4HaVoPx1ZKcY37Ctfm4sru/view?usp=share_link' target='_blank'><div className='cursor-pointer text-xl text-white absolute -bottom-full left-1/3 z-40 group-hover:bottom-1/2 transition-all duration-500'>Live</div></a> */}
+              {/* <a
+                href="https://github.com/Jatin123lodhi/insta-jatin-reels"
+                target="_blank"
+              >
+                <div className="cursor-pointer text-xl text-white absolute -bottom-full left-2/3 z-40 group-hover:bottom-1/2  transition-all duration-700">
+                  Code{" "}
+                </div>
+              </a> */}
+            </motion.div>
+            <motion.div
+              variants={fadeIn("left", "0.3")}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: "0.3" }}
+              className="group relative overflow-hidden basis-1/3 flex-1  rounded-xl shadow-lg  dark:shadow-md dark:shadow-red-400"
+            >
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <Image
+                src={itcAMS}
+                alt="itcAMS"
+                className="group-hover:scale-125 transition-all duration-500 rounded-xl   "
+              />
+              {/* <a href="https://uat.upcapita.com/home" target="_blank"> */}
+              <div className="cursor-pointer text-xl text-white absolute -bottom-full left-1/2 z-40 group-hover:bottom-1/2 transition-all duration-500 text-center">
+                ITC-AMS
+              </div>
+              {/* </a> */}
+              {/* <a href='https://drive.google.com/file/d/1PeItrCScqH4HaVoPx1ZKcY37Ctfm4sru/view?usp=share_link' target='_blank'><div className='cursor-pointer text-xl text-white absolute -bottom-full left-1/3 z-40 group-hover:bottom-1/2 transition-all duration-500'>Live</div></a> */}
+              {/* <a
+                href="https://github.com/Jatin123lodhi/insta-jatin-reels"
+                target="_blank"
+              >
+                <div className="cursor-pointer text-xl text-white absolute -bottom-full left-2/3 z-40 group-hover:bottom-1/2  transition-all duration-700">
+                  Code{" "}
+                </div>
+              </a> */}
+            </motion.div>
             <motion.div
               variants={fadeIn("right", "0.3")}
               initial="hidden"
